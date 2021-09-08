@@ -1,0 +1,111 @@
+.planner-layout
+{
+  flex: 1;
+  display: flex;
+  margin-left: 4em;
+  width: 95%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  font-family: SegoeUI;
+  animation: fadeIn 0.4s;
+  -webkit-animation: fadeIn 0.4s;
+  -moz-animation: fadeIn 0.4s;
+  -o-animation: fadeIn 0.4s;
+  -ms-animation: fadeIn 0.4s;
+  flex-direction: column;
+}
+
+.grid-container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: auto;
+  height: 85%;
+  width: 96%;
+  padding: 0.2em;
+  background: rgba(0,0,0,0.7);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.43);
+  box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.43);
+}
+
+/* width */
+.grid-container::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+  border-radius: 4px;
+}
+
+.grid-container::-webkit-scrollbar
+{
+	width: 10px;
+  height: 12px;
+	background-color: #F5F5F5;
+  border-radius: 3px;
+}
+
+.grid-container::-webkit-scrollbar-thumb
+{
+  border-radius: 3px;
+	background-color: #F90;
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+.level-buttons-container
+{
+  display: flex;
+  width: 96%;
+  align-items: center;
+  justify-content: flex-start;
+  color: #EDEDED;
+  margin-bottom: 2%;
+}
+
+.blank-space
+{
+  width: 1em;
+}
+
+.level-button-week, .level-button-month, .level-button-quarter, .level-button-year, .level-button-week-active, .level-button-month-active, .level-button-quarter-active, .level-button-year-active
+{
+  padding: 0.6em;
+  padding-bottom: 0.7em;
+  background: #444444;
+  border-radius: 0.5em;
+  width: 7em;
+  -webkit-box-shadow: 3px 3px 7px 1px rgba(0,0,0,0.25);
+  box-shadow: 3px 3px 7px 1px rgba(0,0,0,0.25);
+  transition: all 0.2s linear;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.level-button-week-active, .level-button-month-active, .level-button-quarter-active, .level-button-year-active
+{
+  background: rgba(0,0,0,0.7);
+  cursor: auto;
+}
+
+.level-button-week:hover, .level-button-month:hover, .level-button-quarter:hover, .level-button-year:hover
+{
+  background: #575757;
+  -webkit-box-shadow: 3px 3px 7px 3px rgba(0,0,0,0.25);
+  box-shadow: 3px 3px 7px 3px rgba(0,0,0,0.25);
+}
+
+.level-button:active
+{
+  -webkit-box-shadow: 3px 3px 7px 1px rgba(0,0,0,0.25);
+  box-shadow: 3px 3px 7px 1px rgba(0,0,0,0.25);
+}

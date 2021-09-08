@@ -1,0 +1,192 @@
+.story-update-card, .story-upcoming-update-card
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: white;
+  margin-bottom: 1.15em;
+  border-radius: 0.3em;
+  width: 40em;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+}
+
+.story-upcoming-update-card
+{
+  padding-bottom: 0.7em;
+}
+
+.story-name-container
+{
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  width: 100%;
+  background: cyan;
+  border-radius: 0.35em 0.35em 0 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.story-name-wrapper
+{
+  color: white;
+  width: 30em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.2em;
+}
+
+.story-start-date-wrapper
+{
+  text-align: right;
+  color: white;
+  width: 8em;
+  font-size: 1.2em;
+}
+
+.story-update-card-body
+{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+}
+
+.story-update-card-body-left-section, .story-update-card-body-right-section
+{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-update-card-body-left-section-text
+{
+  font-size: 1.2em;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.story-update-card-body-right-section
+{
+  width: 48%;
+  padding-left: 0.8em;
+  padding-right: 0.5em;
+}
+
+.story-progress-section, .days-elapsed-section
+{
+  width: 100%;
+  margin-top: 0.5em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.days-elapsed-section
+{
+  margin-bottom: 0.8em;
+}
+
+.story-progress-bar-track, .days-elapsed-bar-track
+{
+  margin-top: 0.5em;
+  border-radius: 5px;
+  width: 100%;
+  background: lightgray;
+  height: 8px;
+}
+
+.story-progress-bar, .days-elapsed-bar
+{
+  height: 100%;
+}
+
+@keyframes animateProgress {
+
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+
+}
+
+.story-progress-indicator, .days-elapsed-indicator
+{
+  height: 100%;
+  animation: animateProgress 2.5s ease-out;
+
+  border-radius: 5px;
+  background: #94C973;
+}
+
+.days-elapsed-indicator
+{
+  background: #F37970;
+}
+
+.story-progress-text, .days-elapsed-text
+{
+  font-size: 1.05em;
+}
+
+.story-details-section
+{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-details-separator
+{
+  margin-top: 0.7em;
+  height: 70%;
+  width: 1px;
+  margin-right: 1.5em;
+  background: lightgray;
+}
+
+.ongoing-story-details-separator
+{
+  margin-top: 1em;
+  height: 70%;
+  width: 1px;
+  margin-left: 1em;
+  margin-right: 1em;
+  background: lightgray;
+}
+
+.story-start-details-section, .story-end-details-section
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40%;
+}
+
+
+.story-start-text, .days-to-start-text, .story-end-text, .days-to-complete-text
+{
+  font-size: 1.2em;
+  margin-top: 0.7em;
+}
+
+.story-start-icon, .story-end-icon
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  margin-right: 1.1em;
+}

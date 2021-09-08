@@ -1,0 +1,77 @@
+.task-view-layout
+{
+  display: flex;
+  height: 95%;
+  width: 96%;
+  margin-left: 4em;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  font-family: SegoeUI;
+  animation: fadeIn 0.4s;
+  -webkit-animation: fadeIn 0.4s;
+  -moz-animation: fadeIn 0.4s;
+  -o-animation: fadeIn 0.4s;
+  -ms-animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.tasks-container
+{
+  display: flex;
+  height: 95%;
+  width: 95%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.task-view-header-container
+{
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  font-size: 1.6em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  color: #EEEDE7;
+}
+
+.task-cards-container-layout
+{
+  padding-top:0.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1em;
+}

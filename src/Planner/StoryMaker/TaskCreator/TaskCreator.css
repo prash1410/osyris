@@ -1,0 +1,237 @@
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Light"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+    font-weight: 100;
+}
+
+
+.task-creator-layout
+{
+  font-family: Segoe UI;
+  top:0;
+  left:0;
+  position: fixed;
+  z-index: 10;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, .9);
+
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.task-creator-form-layout
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 1.5em;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  width: 95%;
+  height: 90%;
+  background-image: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
+}
+
+.task-creator-header-container
+{
+  padding-top: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  width: 100%;
+}
+
+.task-creator-header-text
+{
+  padding-left: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2em;
+  color: white;
+  width: 45%;
+}
+
+.task-creator-save-discard-button-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2em;
+  width: 55%;
+}
+
+.sub-header-container
+{
+  font-family: Segoe UI;
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+  font-size: 1.7em;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.sub-header
+{
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 31%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-form-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  width: 100%;
+  height: 100%;
+}
+
+.task-details-outer-container, .task-timelines-outer-container, .task-updates-outer-container
+{
+  width: 31%;
+  height: 71vh;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 71vh;
+}
+
+.task-details-inner-container, .task-timelines-inner-container, .task-updates-inner-container
+{
+  background: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: rgba(255,255,255,1);
+  border-radius: 1em;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.43);
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.43);
+  overflow-y: auto;
+  padding-left: 2em;
+  padding-right: 1.5em;
+}
+
+
+.story-track-name-container
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 0.5em;
+  font-size: 1.5em;
+  color: #616161;
+  font-family: Segoe UI;
+}
+
+.project-name, .story-name, .track-name
+{
+  margin-bottom: 1.2em;
+}
+
+.project-name
+{
+  margin-top: 0.9em;
+}
+
+.task-color-container
+{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+}
+
+.task-color-switch
+{
+  color: blue;
+  margin-top: 2em;
+  font-family: Segoe UI Light !important;
+  color: #616161;
+}
+
+.expected-date-pickers-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+.date-pickers-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.actual-date-pickers-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.task-status-label
+{
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: #212121;
+}
+
+
+
+.status-button-label
+{
+  margin-top: 0.5em;
+}
+
+
+.demo-wrapper
+{
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  border-radius: 0.5em;
+}
+
+.demo-editor
+{
+  height: 10em;
+  border: 1px solid #E0E0E0;
+}

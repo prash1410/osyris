@@ -1,0 +1,81 @@
+.team-management-row
+{
+  width: 100%;
+}
+
+.row-wrapper
+{
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-top: 1em;
+  font-size: 1.9em;
+}
+
+.team-management-row-input
+{
+  margin-left: 1em;
+  margin-right: 2em;
+  width: 80%;
+}
+
+.team-management-row-input
+{
+  appearance: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  outline: 0;
+  color: #263238;
+  font-size: 0.6em;
+  border-radius: 0.2em;
+	padding: 10px 15px;
+  background-color: white;
+  border: 2px solid #8C1BAB;
+  transition-duration: 0.25s;
+}
+
+.team-management-row-input:hover
+{
+  background-color: #F3E5F5;
+}
+
+.team-management-row-input:focus
+{
+  transform: scale(1.03, 1);
+	background-color: white;
+	color: #8C1BAB;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255,255,255,0.6);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(255,255,255,0.6);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(255,255,255,0.6);
+}
+
+.team-management-row-delete-button
+{
+  color: #8C1BAB;
+  transition-duration: 0.25s;
+  cursor: pointer;
+}
+
+.team-management-row-delete-button:hover
+{
+  color: #C62828;
+  transform: scale(1.08);
+}
+
+.team-management-row-delete-button:active
+{
+   transform: scale(0.95);
+   -webkit-transform: scale(0.95);
+   -ms-transform: scale(0.95);
+}

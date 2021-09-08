@@ -1,0 +1,305 @@
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Light"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+    font-weight: 100;
+}
+
+
+.management-view-layout
+{
+  display: flex;
+  height: 93%;
+  width: 96%;
+  margin-left: 4em;
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  font-family: Segoe UI Light;
+  animation: fadeIn 0.4s;
+  -webkit-animation: fadeIn 0.4s;
+  -moz-animation: fadeIn 0.4s;
+  -o-animation: fadeIn 0.4s;
+  -ms-animation: fadeIn 0.4s;
+}
+
+.projects-section, .team-members-section
+{
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 29%;
+  border-radius: 0.5em;
+  background: white;
+  margin-top: 3em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  -webkit-box-shadow: 0px 0px 21px -5px #000000;
+  box-shadow: 0px 0px 21px -5px #000000;
+  padding-bottom: 1em;
+}
+
+.leaves-holidays-section
+{
+  width: 32%;
+  background: transparent;
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 30%;
+  border-radius: 0.5em;
+  margin-top: 3em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.leaves-section, .holidays-section
+{
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 0.5em;
+  height: 46%;
+  -webkit-box-shadow: 0px 0px 21px -5px #000000;
+  box-shadow: 0px 0px 21px -5px #000000;
+  padding-bottom: 1em;
+}
+
+.holidays-section
+{
+  margin-top: 6%;
+  height: 48%;
+}
+
+.management-view-sections-header
+{
+  width: 100%;
+  text-align: left;
+  margin-top: 0.5em;
+  font-family: Segoe UI Light;
+  font-size: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.management-view-sections-header-text
+{
+  width: 45%;
+}
+
+.management-view-scrollable-container
+{
+  width: 90%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.management-view-scrollable-container::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+.management-view-scrollable-container::-webkit-scrollbar
+{
+	width: 10px;
+  height: 10px;
+	background-color: transparent;
+}
+
+.management-view-scrollable-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px 10px 10px 10px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.management-view-scrollable-container::-webkit-scrollbar-thumb:hover
+{
+	background-color: rgba(0,0,0,0.3);
+}
+
+.add-entity-button-container
+{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.add-entity-button
+{
+  font-family: Segoe Ui;
+  text-align: center;
+  background: white;
+  border: 2px solid #8C1BAB;
+  color: #8C1BAB;
+  width: 50%;
+  padding-top: 0.2em;
+  padding-bottom: 0.3em;
+  font-size: 0.55em;
+  border-radius: 1em;
+  transition: all .4s;
+  cursor: pointer;
+  z-index: 20;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+}
+
+.add-entity-button:hover
+{
+  background: #AB47BC;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  color: white;
+}
+
+.add-entity-button:active
+{
+   transform: scale(0.95);
+   -webkit-transform: scale(0.95);
+   -ms-transform: scale(0.95);
+}
+
+.delete-leave-button-container
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.delete-leave-button
+{
+  font-size: 0.85em;
+  transition-duration: 0.25s;
+  cursor: pointer;
+}
+
+.delete-leave-button:hover
+{
+  color: #FAFAFA;
+}
+
+
+.add-leave-ui
+{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 48em;
+  height: 48%;
+  border-radius: 0.5em;
+  background: white;
+}
+
+.add-leave-ui-header
+{
+  font-family: Segoe UI Light;
+  font-size: 2em;
+  width: 100%;
+  text-align: left;
+  margin-top: 0.7em;
+}
+
+.top-row-container, .bottom-row-container, .save-close-button-container
+{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-row-container
+{
+  margin-top: 3em;
+}
+
+.save-close-button-container
+{
+  margin-top: 3em;
+}
+
+.save-leave-button, .cancel-leave-button
+{
+  font-family: Segoe Ui;
+  text-align: center;
+  background: white;
+  border: 2px solid #00B74A;
+  color: #00B74A;
+  padding-top: 0.3em;
+  padding-bottom: 0.4em;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 1.2em;
+  border-radius: 1em;
+  transition: all .4s;
+  cursor: pointer;
+  z-index: 20;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+}
+
+.cancel-leave-button
+{
+  border: 2px solid #F93154;
+  color:#F93154;
+}
+
+.save-leave-button:hover
+{
+  background: #00B74A;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  color: white;
+}
+
+.cancel-leave-button:hover
+{
+  background: #F93154;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  color: white;
+}
+
+.save-leave-button:active
+{
+   transform: scale(0.95);
+   -webkit-transform: scale(0.95);
+   -ms-transform: scale(0.95);
+}
+
+.remove-team-member-text
+{
+  width: 80%;
+  font-size: 1.7em;
+  margin-top: 4em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.remove-team-member-note-text
+{
+  margin-top: 1em;
+  color: green;
+  font-size: 1em;
+  font-style: italic;
+}

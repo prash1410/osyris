@@ -1,0 +1,528 @@
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Light"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+    font-weight: 100;
+}
+
+
+.summary-view-layout
+{
+  display: flex;
+  height: 93%;
+  width: 96%;
+  margin-left: 4em;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: Segoe UI Light;
+  animation: fadeIn 0.4s;
+  -webkit-animation: fadeIn 0.4s;
+  -moz-animation: fadeIn 0.4s;
+  -o-animation: fadeIn 0.4s;
+  -ms-animation: fadeIn 0.4s;
+
+  background: rgba(255,255,255,0);
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+.status-cards-container, .update-cards-container, .utilization-holiday-cards-container
+{
+  height: 12%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.status-cards-container
+{
+  padding-top: 1.5%;
+}
+
+.update-cards-container
+{
+  height: 43%;
+  padding-top: 1.5%;
+}
+
+.utilization-holiday-cards-container
+{
+  height: 33.5%;
+  padding-top: 1.5%;
+}
+
+.active-projects-card, .error-count-card, .delay-count-card, .task-summary-card, .lookup-selectors-card, .happening-now-card, .whats-next-card, .utilization-card, .leaves-card, .holidays-card
+{
+  font-family: Segoe UI Light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #5d5f5a;
+  background: rgba(255,255,255,1);
+  border-radius: 0.7em;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 21px -5px #000000;
+  box-shadow: 0px 0px 21px -5px #000000;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-bottom: 0.3em;
+  overflow: hidden;
+}
+
+.active-projects-card, .delay-count-card, .error-count-card
+{
+  width: 10%;
+}
+
+.task-summary-card
+{
+  width: 30%;
+}
+
+.lookup-selectors-card
+{
+  width: 26%;
+}
+
+
+.task-summary-card, .summary-date-pickers-card
+{
+  flex-direction: row;
+}
+
+.lookup-selectors-card
+{
+  flex-direction: row;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.look-back-selector-text, .look-ahead-selector-text
+{
+  font-size: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+.happening-now-card, .whats-next-card
+{
+  padding-top: 0.5em;
+  justify-content:flex-start;
+  width: 46.24%;
+  background: rgba(255, 255, 255, 1);
+  padding-bottom: 0em;
+}
+
+.utilization-card
+{
+  width: 46.24%;
+  justify-content: flex-start;
+}
+
+.leaves-card
+{
+  width: 21%;
+  justify-content: flex-start;
+}
+
+.leaves-card-body, .holidays-card-body
+{
+  width: 92%;
+  height: 73%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.leaves-card-body::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+.leaves-card-body::-webkit-scrollbar
+{
+	width: 10px;
+  height: 10px;
+	background-color: transparent;
+}
+
+.leaves-card-body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px 10px 10px 10px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.leaves-card-body::-webkit-scrollbar-thumb:hover
+{
+	background-color: rgba(0,0,0,0.3);
+}
+
+.leave-card
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  background: white;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  width: 90%;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  border-radius: 0.5em;
+  padding-bottom: 0.2em;
+}
+
+.leave-card-right-section
+{
+  width: 100%;
+}
+
+.team-member-name-wrapper
+{
+  display: flex;
+  width: 100%;
+  background: purple;
+  color: white;
+  border-radius: 0.3em 0.3em 0 0;
+  font-size: 1.3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.leave-details-section
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.leave-icon-container
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 20%;
+}
+
+.days-count-section
+{
+  font-size: 1.4em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38%;
+}
+
+.leave-days-section
+{
+  font-size: 1em;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.leave-start-date, .leave-end-date
+{
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.holidays-card
+{
+  width: 23.24%;
+  justify-content: flex-start;
+}
+
+.holidays-card-body
+{
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.holidays-card-body::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+.holidays-card-body::-webkit-scrollbar
+{
+	width: 10px;
+  height: 10px;
+	background-color: transparent;
+}
+
+.holidays-card-body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px 10px 10px 10px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.holidays-card-body::-webkit-scrollbar-thumb:hover
+{
+	background-color: rgba(0,0,0,0.3);
+}
+
+.holiday-row
+{
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  padding-top: 0.1em;
+  padding-bottom: 0.3em;
+  border: 1px solid lightgray;
+  border-radius: 0.3em;
+}
+
+.holiday-name-wrapper
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: calc(55%);
+  overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+
+}
+
+.holiday-date-wrapper
+{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.utilization-card-body
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 0.5em;
+}
+
+.utilization-card-body-left-section
+{
+  width: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 4em;
+}
+
+.percent-utilization
+{
+  font-size: 3.2em;
+  font-weight: bold;
+}
+
+.utilization-text
+{
+  font-size: 1.5em;
+}
+
+.working-days-count, .team-members-count
+{
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.team-members-count
+{
+  margin-top: 0.3em;
+}
+
+.utilization-card-body-right-section
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+}
+
+
+.update-card-header, .utilization-card-header
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1.5em;
+  margin-bottom: 0.2em;
+  font-size: 1.5em;
+}
+
+.utilization-card-header
+{
+  margin-top: 0.5em;
+}
+
+.whats-next-card-header
+{
+  font-size: 1.5em;
+}
+
+.scrollable-container
+{
+  margin-top: 0.2em;
+  width: 90%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 0.5em;
+  overflow: auto;
+}
+
+.scrollable-container::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+.scrollable-container::-webkit-scrollbar
+{
+	width: 10px;
+  height: 10px;
+	background-color: transparent;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px 10px 10px 10px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover
+{
+	background-color: rgba(0,0,0,0.3);
+}
+
+
+.total-task-count-section, .not-started-task-count-section, .in-progress-task-count-section, .completed-task-count-section
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.7em 0em 0em 0.7em;
+}
+
+.separator
+{
+  background: #B9B7BD;
+  height: 70%;
+  width: 1px;
+  margin-top: 0.3em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.error-count-card-left-section
+{
+  background: #E43D40;
+}
+
+.active-projects-icon, .error-icon, .delay-icon
+{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 2em;
+  margin-top: 0.1em;
+}
+
+.active-projects-text, .delay-text, .error-text, .total-task-count-text, .not-started-task-count-text, .in-progress-task-count-text, .completed-task-count-text
+{
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-task-count-text
+{
+  width: 100%;
+}
+
+.not-started-task-count-text, .in-progress-task-count-text, .completed-task-count-text
+{
+  font-size: 1.4em;
+}
+
+.active-projects-count, .delay-count, .error-count, .total-task-count, .not-started-task-count, .in-progress-task-count, .completed-task-count
+{
+  font-size: 3em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  color: #81B622;
+}
+
+.not-started-task-count, .in-progress-task-count, .completed-task-count
+{
+  font-size: 3em;
+}

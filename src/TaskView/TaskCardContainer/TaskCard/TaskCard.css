@@ -1,0 +1,140 @@
+.task-card
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.3em;
+  width: 92%;
+  margin-left: 0.8em;
+  background: white;
+  margin-bottom: 1.2em;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.task-card:hover
+{
+  -webkit-box-shadow: 0px 0px 25px -3px #000000;
+  box-shadow: 0px 0px 25px -3px #000000;
+}
+
+.task-card:active
+{
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+}
+
+.task-contents-container
+{
+  margin: 0.6em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.task-name-container
+{
+  padding: 0.2em;
+  font-size: 1.25em;
+}
+
+.project-story-name-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  color:white;
+  width: 100%;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border-radius: 0.3em;
+}
+
+.project-story-name
+{
+  width: calc(95%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task-menu-button
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  cursor: pointer;
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  transition: all 0.3s ease-out;
+}
+
+.task-menu-button:hover
+{
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.task-dates-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  background: #F9F1F0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  border-radius: 0.3em;
+  color:#424242;
+  font-size: 1em;
+}
+
+.task-dates
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.task-dates-metadata
+{
+  font-size: 0.9em;
+  font-style: italic;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.in-progress-menu-item
+{
+  color:#FFA900;
+}
+
+.completed-menu-item
+{
+  color:#00B74A;
+}
+
+.not-started-menu-item
+{
+  color:#546E7A;
+}
+
+.delete-menu-item
+{
+  color:#F93154;
+}

@@ -1,0 +1,297 @@
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Light"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+    font-weight: 100;
+}
+
+
+.utilization-view-layout
+{
+  display: flex;
+  height: 93%;
+  width: 96%;
+  margin-left: 4em;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: Segoe UI Light;
+  animation: fadeIn 0.4s;
+  -webkit-animation: fadeIn 0.4s;
+  -moz-animation: fadeIn 0.4s;
+  -o-animation: fadeIn 0.4s;
+  -ms-animation: fadeIn 0.4s;
+}
+
+.filter-cards-container, .utilization-chart-container
+{
+  height: 12%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.filter-cards-container
+{
+  padding-top: 1.5%;
+}
+
+.utilization-chart-container
+{
+  padding-top: 1.5%;
+  height: 80%;
+}
+
+.utilization-container-card::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+.utilization-container-card::-webkit-scrollbar
+{
+	width: 10px;
+  height: 10px;
+	background-color: transparent;
+}
+
+.utilization-container-card::-webkit-scrollbar-thumb
+{
+	border-radius: 10px 10px 10px 10px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.utilization-container-card::-webkit-scrollbar-thumb:hover
+{
+	background-color: rgba(0,0,0,0.5);
+}
+
+.utilization-container-card, .team-members-selector-card, .legend-card
+{
+  font-family: Segoe UI Light;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #5d5f5a;
+  background: rgba(255,255,255,1);
+  border-radius: 0.7em;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 21px -5px #000000;
+  box-shadow: 0px 0px 21px -5px #000000;
+  margin-left: 1em;
+  margin-right: 1em;
+  overflow: hidden;
+  width: 93%;
+
+  overflow: auto;
+}
+
+.utilization-container-card
+{
+  background: rgba(256,256,256,0.9);
+  padding-top: 1.5em;
+  width: 96%;
+}
+
+.legend-card
+{
+  overflow: auto;
+  align-items: flex-start;
+  justify-content: center;
+  width: 45%;
+  padding-bottom: 0.3em;
+}
+
+.legend-card::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+.legend-card::-webkit-scrollbar
+{
+	width: 10px;
+  height: 10px;
+	background-color: transparent;
+}
+
+.legend-card::-webkit-scrollbar-thumb
+{
+	border-radius: 10px 10px 10px 10px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.legend-card::-webkit-scrollbar-thumb:hover
+{
+	background-color: rgba(0,0,0,0.6);
+}
+
+.legend-wrapper
+{
+  width: 100%;
+  margin-top: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 1em;
+  padding-right: 1em;
+}
+
+.legend-item-wrapper
+{
+  width: 100%;
+  margin-left: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.07);
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 5em;
+}
+
+.legend-project-color
+{
+  height: 1.3em;
+  width: 1.3em;
+  border-radius: 0.3em;
+}
+
+.legend-project-name
+{
+  width: 100%;
+  margin-left: 0.5em;
+  font-family: Segoe UI;
+  color: gray;
+  font-size: 1.3em;
+}
+
+.team-members-selector-card
+{
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: center;
+  width: 20%;
+  padding-bottom: 0.3em;
+}
+
+.individual-utilization-row
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 1.5em;
+}
+
+.individual-utilization-container
+{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 12%;
+  height: 100%;
+  color: white;
+  background: purple;
+  border: 2px solid;
+  border-radius: 0.5em 0 0 0.5em;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  z-index: 10;
+}
+
+.team-member-name
+{
+  font-size: 2em;
+  margin-top: 0.5em;
+  font-family: Segoe UI;
+  width: 90%;
+  text-align: left;
+}
+
+.past-future-utilization-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.past-future-utilization-row
+{
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-top: 0.8em;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.3em;
+}
+
+.past-future-utilization-percentage
+{
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+.past-future-utilization-text
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1em;
+  font-size: 1.1em;
+}
+
+.utilization-chart-wrapper
+{
+  background: white;
+  overflow: auto;
+  width: 84%;
+  height: 100%;
+  border-radius: 0 0.5em 0.5em 0;
+  border: 2px solid red;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.43);
+  z-index: 5;
+}
+
+.utilization-chart-wrapper::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+.utilization-chart-wrapper::-webkit-scrollbar
+{
+	width: 10px;
+  height: 10px;
+	background-color: transparent;
+}
+
+.utilization-chart-wrapper::-webkit-scrollbar-thumb
+{
+	border-radius: 10px 10px 10px 10px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.utilization-chart-wrapper::-webkit-scrollbar-thumb:hover
+{
+	background-color: rgba(0,0,0,0.3);
+}

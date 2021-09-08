@@ -1,0 +1,12 @@
+.delete-holiday-button
+{
+  color: gray;
+  font-size: 0.85em;
+  transition-duration: 0.25s;
+  cursor: pointer;
+}
+
+.delete-holiday-button:hover
+{
+  color: #EF9A9A;
+}

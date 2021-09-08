@@ -1,0 +1,122 @@
+.task-cell-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  position: relative;
+}
+
+.task-cell-container-hoverable
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  position: relative;
+}
+
+.task-cell, .task-cell-overlay
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  margin: 0.2em;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.task-cell-overlay
+{
+  display: none;
+  color: #EDEDED;
+  font-weight: bolder;
+  background: #575757;
+}
+
+
+.task-cell-container-hoverable:hover .task-cell-overlay
+{
+    display: flex;
+    -webkit-animation: fadeIn 0.6s;
+    animation: fadeIn 0.6s;
+    cursor: pointer;
+}
+
+.task-cell-container-hoverable:hover .task-cell
+{
+    display: none !important;
+    -webkit-animation: fadeOut 0.6s;
+    animation: fadeOut 0.6s;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@-webkit-keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+
+
+.task-cell-overlay:active {
+   transform: scale(0.95);
+   -webkit-transform: scale(0.95);
+   -ms-transform: scale(0.95);
+}
+
+.track-name-input
+{
+  appearance: none;
+  text-align: center;
+  height: 70%;
+  width: 80%;
+  background: #167D7F;
+  color: #EEEDE7;
+  padding: 0;
+
+  border: 1px solid rgba(255,255,255,0.4);
+  outline: 0;
+  color: white;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: rgba(255,255,255,0.2);
+  transition-duration: 0.25s;
+}
+
+.track-name-input:hover
+{
+  background-color: rgba(255,255,255,0.4);
+}
+
+.track-name-input:focus
+{
+	background-color: white;
+	color: #167D7F;
+  font-weight: bold;
+}
+
+.track-menu
+{
+  color:#E0E0E0;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+.track-menu:hover
+{
+  color: white;
+}

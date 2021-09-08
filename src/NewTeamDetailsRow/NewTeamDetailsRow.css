@@ -1,0 +1,88 @@
+.team-member-container
+{
+  margin-top: 1.5em;
+  z-index: 20;
+  width: 100%;
+}
+
+.team-member-wrapper
+{
+  font-size: 1em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.team-member-name-input
+{
+  margin-left: 1em;
+  margin-right: 2em;
+  width: 80%;
+}
+
+.team-member-name-input
+{
+  appearance: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  outline: 0;
+  color: white;
+  font-size: 0.6em;
+  border-radius: 3px;
+	padding: 10px 15px;
+  background-color: rgba(255,255,255,0.2);
+  transition-duration: 0.25s;
+}
+
+.team-member-name-input:hover
+{
+  background-color: rgba(255,255,255,0.4);
+}
+
+.team-member-name-input:focus
+{
+  transform: scale(1.03, 1);
+	background-color: white;
+	color: #8C1BAB;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255,255,255,0.6);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(255,255,255,0.6);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(255,255,255,0.6);
+}
+
+.team-member-namer-error-message-container
+{
+  margin-top: 0.4em;
+  font-size: 0.5em;
+  margin-left: 2em;
+}
+
+.team-member-remove-button
+{
+  color: rgba(255,255,255,0.6);
+  transition-duration: 0.25s;
+  cursor: pointer;
+}
+
+.team-member-remove-button:hover
+{
+  color: white;
+  transform: scale(1.08);
+}
+
+.team-member-remove-button:active
+{
+   transform: scale(0.95);
+   -webkit-transform: scale(0.95);
+   -ms-transform: scale(0.95);
+}
