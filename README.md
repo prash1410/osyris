@@ -41,6 +41,7 @@ Let's take a look at the views built within the app:
 - It offers functionality to view, create, edit and delete stories corresponding to any project
 
 
+
 **4. Edit/Create Story View**
 
 Let's take a look at an already created story *Half-yearly Forecast Refresh* in *Sales Forecasting* project 
@@ -49,8 +50,44 @@ Let's take a look at an already created story *Half-yearly Forecast Refresh* in 
 - User always has functionality to add or delete tracks from the story, rename them or even add or delete tasks from these tracks
 
 
+
 **5. Edit/Create Task View**
 
 Clicking on any empty cell on a corresponding track allows user to create a task in that track while clicking on an already existing task allows user to see more details about that task or edit or delete the task
 ![Edit-Create Task View](https://user-images.githubusercontent.com/33143837/132490293-8ad53862-0c15-454d-b8e8-2e3899d2a7a5.png)
 - Edit/Create Task View provides multiple options to add details to tasks which eventually are used to populate summary view
+
+
+**6. Utilization View**
+
+Based on the utilization set for each task, this view combines it all to give a comprehensive overview of utilization of each team member, both in the look-back period and look-ahead period
+![Team Utilization View](https://user-images.githubusercontent.com/33143837/132491684-5b575b5e-bf62-4854-acdc-b54081da84db.png)
+- The utilization charts also show which particular task a team member is working on upon hovering
+- Analyzing look-back period utilization allows to assess if any team member was over or under utilized
+- Analyzing look-ahead period utilization allows to assess which team member can be assigned any upcoming tasks
+
+
+**7. Task View**
+
+This task view is meant to be used for daily scrums, to discuss daily tasks with the team members and quickly change status of the tasks as they move into *In Progress* and *Completed* stages
+![Task View](https://user-images.githubusercontent.com/33143837/132492463-5cb68eb4-1720-4c86-b323-a0181fd03b59.png)
+
+
+**8. Team Management View**
+
+Lastly, we have Team Management View
+![Team Management View](https://user-images.githubusercontent.com/33143837/132492705-2555a28a-1b64-49d7-bb51-536734b79a55.png)
+This view allows us to do the following:
+- Add, delete, rename or change color of an already existing project
+- Add, delete, rename or change color of an already existing team member
+- Add or delete holidays and leaves *in case you were wondering where do holidays and leaves come from in the Summary View ;)*
+
+
+**9. Add a New Team**
+
+Finally, if you've made it this far and want to create your own team and manage your projects efficiently, you can simply do so by creating a new team from Landing Page
+![Create a New Team](https://user-images.githubusercontent.com/33143837/132493264-fd4a9fab-d890-441f-992d-203eaf0b9a1d.png)
+
+
+*Incepted and developed by:
+Prashant Sahu*
